@@ -14,9 +14,9 @@ body{
 *{
     outline: none;
 }
-/* *:not(.slick-track):not(.slick-list){
+*:not(.slick-track):not(.slick-list){
     transition: 0.4s;
-} */
+}
 .container{
     max-width: 1140px;
     margin: 0 auto;
