@@ -35,15 +35,27 @@ document.addEventListener('scroll', () => {
         })
     }
 
-//     window.scrollY>=200 ? {header.style.padding= "5rem", header.style.boxShadow="0 0.4px 10px 1px #000"} : {header.style.padding= "5rem" , header.style.boxShadow="none"};
+    // if/else Statement
+    // if (window.scrollY >= 200){
+    //     header.style.padding= "0.5rem";
+    //     header.style.boxShadow="0 0.4px 10px 1px #999";
+    // }else{
+    //     header.style.padding= "1rem";
+    //     header.style.boxShadow="none";
+    // }
 
-    if (window.scrollY >= 200){
-        header.style.padding= "0.5rem";
-        header.style.boxShadow="0 0.4px 10px 1px #999";
-    }else{
-        header.style.padding= "1rem";
-        header.style.boxShadow="none";
-    }
+
+    // Ternary Operator Method 1
+    // header.style.padding = window.scrollY >= 200 ? ".5rem" : "1rem";
+    // header.style.boxShadow = window.scrollY >= 200 ? "0 0.4px 10px 1px #999" : 'none';
+
+    // Ternary Operator Method 2
+    window.scrollY >= 200 ?
+        ( header.style.padding= ".5rem",
+        header.style.boxShadow="0 0.4px 10px 1px #999" )
+    :
+        ( header.style.padding= "1rem",
+        header.style.boxShadow="none" );
 
 })
 
